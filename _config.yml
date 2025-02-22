@@ -1,20 +1,6 @@
-# Site Build Settings
-
-# jekyll-paginate configuration
-paginate:            5
-
-# Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
-
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		          "Mahathi Kuchibhotla"
-description:	       "Python Developer"
-#author:              "Paul Le"
-theme: jekyll-theme-millenial
-
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+title: Mahathi Kuchibhotla
+#logo: /assets/img/logo.png
+description: Python Developer
+show_downloads: true
+#google_analytics:
+theme: jekyll-theme-minimal
