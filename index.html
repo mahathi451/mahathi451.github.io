@@ -1,222 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | John Doe</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #2A3B47;
-            --secondary: #5B7E8C;
-            --accent: #E74C3C;
-            --light: #F5F6F7;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: var(--light);
-            color: var(--primary);
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        .navbar {
-            background: rgba(255, 255, 255, 0.97);
-            padding: 1rem 2rem;
-            position: fixed;
-            width: 100%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: flex-end;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 8rem 2rem 2rem;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            color: white;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Sections */
-        .section {
-            padding: 5rem 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--secondary);
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .skill-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                justify-content: center;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>iPortfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Resume</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>John Doe</h1>
-            <h2>Senior Software Engineer</h2>
-            <p>Building scalable solutions with modern technologies</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container">
+      <h1>Alex Smith</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer"></span></p>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <!-- About content from original template -->
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p>Experienced software engineer with 8+ years in full-stack development...</p>
-        </div>
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <!-- Skills content from original template -->
     </section>
 
-    <section id="skills" class="section">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>ES6+, Node.js, Express</p>
-            </div>
-            <!-- Add more skill cards -->
-        </div>
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <!-- Resume content from original template -->
     </section>
 
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="project-info">
-                    <h3>Enterprise SaaS Platform</h3>
-                    <p>React, Node.js, PostgreSQL</p>
-                </div>
-            </div>
-            <!-- Add more project cards -->
-        </div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <!-- Contact content from original template -->
     </section>
+  </main>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="Message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
