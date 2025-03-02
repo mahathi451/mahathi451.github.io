@@ -197,73 +197,107 @@
     </section>/Stats Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+    <!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Core technical competencies demonstrating full-stack expertise.</p>
+  </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skills</h2>
-        <p>Showcasing skills below which highlight my full-stack developer experience.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Django</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>AWS</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Flask</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>ReactPy</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row skills-content skills-animation">
+      <div class="col-lg-12">
+        <table class="skills-table">
+          <tr>
+            <td class="skill-item">
+              <div class="skill-label">Python</div>
+              <img src="python-pie.png" alt="Python" class="skill-pie">
+            </td>
+            <td class="skill-item">
+              <div class="skill-label">Django</div>
+              <img src="django-pie.png" alt="Django" class="skill-pie">
+            </td>
+            <td class="skill-item">
+              <div class="skill-label">SQL</div>
+              <img src="sql-pie.png" alt="SQL" class="skill-pie">
+            </td>
+          </tr>
+          <tr>
+            <td class="skill-item">
+              <div class="skill-label">AWS</div>
+              <img src="aws-pie.png" alt="AWS" class="skill-pie">
+            </td>
+            <td class="skill-item">
+              <div class="skill-label">Flask</div>
+              <img src="flask-pie.png" alt="Flask" class="skill-pie">
+            </td>
+            <td class="skill-item">
+              <div class="skill-label">ReactPy</div>
+              <img src="reactpy-pie.png" alt="ReactPy" class="skill-pie">
+            </td>
+          </tr>
+        </table>
       </div>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Skills Section -->
+<style>
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.skill-item {
+  text-align: center;
+  padding: 2rem;
+  border: none !important;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+.skill-pie {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.skill-pie:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    padding: 1.5rem;
+  }
+  
+  .skill-pie {
+    width: 60px;
+    height: 60px;
+  }
+}
+</style>
+
+    <!-- /Skills Section -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
